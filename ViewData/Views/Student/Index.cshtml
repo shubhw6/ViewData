@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+<h1>Name is:@ViewData["Name"]</h1>
+<h2>
+    Age is:@ViewData["Age"]
+</h2>
+
+@foreach (var item in (string[])ViewData["NAmeList"])
+{
+    <h4>@item</h4>
+
+
+
+    
+}
+
+
+
+@{
+    var stu = (Student)ViewData["StudentList"];
+}
+Id:@stu.Id
+<br />
+Name:@stu.Name
+<br />
+Description:@stu.Description
+<br />
+
+<br />
